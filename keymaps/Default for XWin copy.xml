@@ -1,0 +1,22 @@
+<keymap version="1" name="Default for XWin copy" parent="Default for XWin">
+  <action id="BraceOrQuoteOut" />
+  <action id="Console.Execute" />
+  <action id="Console.TableResult.EditValue">
+    <keyboard-shortcut first-keystroke="f2" />
+    <keyboard-shortcut first-keystroke="alt enter" />
+  </action>
+  <action id="DirDiffMenu.SynchronizeDiff" />
+  <action id="EditorChooseLookupItem" />
+  <action id="EditorChooseLookupItemReplace" />
+  <action id="EditorEnter" />
+  <action id="EditorIndentSelection" />
+  <action id="EditorTab" />
+  <action id="ExpandLiveTemplateByTab" />
+  <action id="Images.Thumbnails.EnterAction" />
+  <action id="NextParameter" />
+  <action id="NextTemplateParameter" />
+  <action id="NextTemplateVariable" />
+  <action id="PropertyInspectorActions.EditValue" />
+  <action id="SearchEverywhere.NextTab" />
+  <action id="SearchEverywhere.SelectItem" />
+</keymap>
