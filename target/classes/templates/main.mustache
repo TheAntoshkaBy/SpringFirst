@@ -1,7 +1,27 @@
 <html>
     <body>
+    <div>
+        <form method="post">
+            <input type="text" name="text" placeholder="Введите сообщение" />
+            <input type="text" name="tag" placeholder="Тэг">
+            <button type="submit">Добавить</button>
+        </form>
+    </div>
+    <div>Список сообщений</div>
         <div>
-            {{some}}
+            {{#messages}}
+                <div>
+                    <b>{{id}}</b>
+                    <span>{{text}}</span>
+                    <i>{{tag}}</i>
+                </div>
         </div>
+            {{/messages}}
     </body>
 </html>
+
+<!--
+div - отображает блок очередной
+#messages - пробег по списку сообщений
+и вывод полей id, text, tag
+-->
