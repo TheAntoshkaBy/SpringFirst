@@ -9,14 +9,25 @@ import javax.persistence.Id;
  а сущность которую нам необходимо сейвить в базе данных.*/
 
 public class Message {
+
     /**Две аннтоации, что бы различать две записи в одной табличке*/
     @Id /**поясняем, что это ID*/
     @GeneratedValue(strategy= GenerationType.AUTO)/**Spring  сам разберется
      в каком виде будут генерится значения*/
+
     private Integer id;
 
     private String text;
     private String tag;
+
+    public Message(String text, String tag) {
+        this.text = text;
+        this.tag = tag;
+
+    }
+
+    public Message() {
+    }
 
     public Integer getId() {
         return id;
